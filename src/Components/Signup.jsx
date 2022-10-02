@@ -12,7 +12,12 @@ export default function Signup(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(email);
+        if (!firstName == 0 && !lastName == 0 && !email == 0 && !pass == 0) {
+            alert("Submitted successfully")
+        }
+        else {
+            alert("Please enter the details!")
+        }
     }
 
     return (
